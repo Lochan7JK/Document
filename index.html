@@ -1,0 +1,212 @@
+<html>
+
+<head>
+    <title>Mainpage</title>
+    <link href="index.css" rel="Stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+        integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<script src="https://kit.fontawesome.com/c4338603d0.js" crossorigin="anonymous"></script>
+
+<body>
+    <header>
+        <div>
+            <img src="images/wattpad logo.png" alt="logo" id="brand" />
+        </div>
+        <div class="topnav">
+           <button class="btn btn-light searchicon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+            <input type="text" placeholder="Search.." id="search">
+            <a id="home" href="../Mainpage/mainpage.html">Home</a>
+            <a href="../library/library.html" id="lib">Library</a>
+       
+
+            <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown" id="write">Write
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+                <li>
+                    <a href="../Newstory/new story.html" id="mystories"><img src="images/create a new story.png" alt="create a new story" id="create">Create a new Story</a>
+                </li>
+                <li><a href="../Newstory/new story.html" id="mystories">My Stories</a></li>
+            </ul>
+
+            <a href="../premium page/premium.html">
+                <button class="btn btn-outline-dark" id="premium">
+                 <i class="fa-solid fa-bolt symbol"></i>    Try Premium
+                </button>
+            </a>
+
+            <!-- <button class="btn btn-light" id="pro">
+                <img src="images/no image profile.jpg" alt="profileImg" class="rounded" id="profile"/>
+            </button>  -->
+
+            <div class="dropdown">
+                <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" id="pro">
+                    <i class="fa-regular fa-user"></i>
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="../Myprofile/myprofile.html">My Profile</a>
+                    <hr />
+                    <a class="dropdown-item" href="../Myprofile/myprofile.html">Language: English</a>
+                    <a class="dropdown-item" href="../Myprofile/myprofile.html">Setting</a>
+                    <a class="dropdown-item" href="../Myprofile/myprofile.html">Log Out</a>
+                </div>
+            </div>
+
+    </header>
+
+    <div id="section1">
+        <div class="greeting-text">Welcome To Wattpad!</div>
+        <div id="subtitle">Read and write anywhere, even offline.</div>
+        <hr />
+        <div>
+            <h3 id="heading">Top Picks For You</h3>
+        </div>
+
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <a href="../Listingpage/Listing.html"><img src="images/kissing booth.jpg" alt="kising booth" /></a>
+                <span class="badge badge-light type">romance</span>
+            </div>
+            <div class="item">
+                <a href="../Listingpage/Listing.html"><img src="images/blind mate.jpg" alt="blind mate" /></a>
+                <span class="badge badge-light type">mature</span>
+            </div>
+            <div class="item">
+                <a href="../Listingpage/Listing.html"><img src="images/ugly.jpg" alt="ugly" /></a>
+                <span class="badge badge-light type">highschool</span>
+            </div>
+            <div class="item">
+                <a href="../Listingpage/Listing.html"><img src="images/teen mom.jpg" alt="teen mom" /></a>
+                <span class="badge badge-light type">teen</span>
+            </div>
+            <div class="item">
+                <a href="../Listingpage/Listing.html"><img src="images/rangrez.jpg" alt="rangrez" /></a>
+                <span class="badge badge-light type">complete</span>
+            </div>
+            <div class="item">
+                <a href="../Listingpage/Listing.html"><img src="images/balcony.jpg" alt="balcony" /></a>
+                <span class="badge badge-light type">love</span>
+            </div>
+            <div class="item">
+                <a href="../Listingpage/Listing.html"><img src="images/weird dreams.jpg" alt="dreams" /></a>
+                <span class="badge badge-light type">Ongoing</span>
+            </div>
+        </div>
+        <script>
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 3
+                    },
+                    1000: {
+                        items: 5
+                    }
+                }
+            })
+        </script>
+    </div>
+
+    <div id="section2">
+        <div class="allcontent">
+            <div class="imgDiv">
+                <a href="../Listingpage/Listing.html"><img src="images/after.jpg" alt="after" class="img" /></a>
+            </div>
+            <div class="contentDiv">
+                <div>
+                    <h3 class="title">After</h3>
+                </div>
+                <span class="badge badge-dark complete">Complete</span>
+                <div class="read">
+                    <a href="../readingpage/reading.html">
+                        <button class="btn btn-outline-dark startReading">Start Reading</button>
+                    </a>
+                    <a href="../library/library.html">
+                    <button class="btn btn-outline-light">
+                        <i class="fa-solid fa-circle-plus add"></i>
+                    </button>
+                    </a>
+                      
+                </div>
+                <div class="overview">
+                    <p>
+                        Tessa Young is an 18 year old college student with a simple life, excellent grades, and a sweet
+                        boyfriend. She always has things planned out ahead of time, until she meets a rude boy named
+                        Hardin, with too many tattoos and piercings who shatters her plans.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div id="section3">
+        <div class="allcontent">
+            <div class="imgDiv">
+                <a href="../Listingpage/Listing.html"><img src="images/half a moonstone.jpg" alt="half a moonstone" class="img" /></a>
+            </div>
+            <div class="contentDiv">
+                <div>
+                    <h3 class="title">Half a Moonstone</h3>
+                </div>
+                <span class="badge badge-dark complete">Complete</span>
+                <div class="read">
+                    <a href="../readingpage/reading.html">
+                        <button class="btn btn-outline-dark startReading">Start Reading</button>
+                    </a>
+                    <a href="../library/library.html">
+                    <button class="btn btn-outline-light">
+                        <i class="fa-solid fa-circle-plus add"></i>
+                    </button>
+                    </a>
+                    
+                </div>
+                <div class="overview">
+                    <p>
+                        An aura of power wrapped around the pair as their eyes met. Damayanthi Pratap Rathore, the only
+                        heir to the throne smiled as she greeted Rajveer Vikram Rana, the best swordsman of Mahendragiri
+                        and the Chief of Security.
+                        Both saw it at the exact same time. Half a moonstone, embedded on the hilt of each other's
+                        swords. Both The Princess and the Warrior inwardly gasped. The gems looked so identical, as if
+                        they were two halves of the same moonstone....
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div>
+            <h3 id="footDiv">Wattpad Where Stories Live....</h3>
+        </div>
+    </footer>
+</body>
+
+</html>
