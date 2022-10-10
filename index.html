@@ -6,10 +6,17 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
@@ -21,21 +28,91 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
         integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="index.js"></script>
 </head>
 
 <script src="https://kit.fontawesome.com/c4338603d0.js" crossorigin="anonymous"></script>
 
 <body>
-    <header>
-        <div>
+        <header>
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="images/wa8461h128-wattpad-logo-help-center.png" alt="logo" id="brand1" />
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarScroll">
+                        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+                            style="--bs-scroll-height: 100px;">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Library</a>
+                            </li>
+                            <li class="nav-item dropdown write">
+                                <a class="nav-link active dropdown-toggle" href="#" id="navbarScrollingDropdown"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Write
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                    <li><a class="dropdown-item" href="#"><img src="images/create a new story.png"
+                                                alt="create a new story" id="create">Create a
+                                            new Story</a></li>
+                                    <li><a class="dropdown-item" href="#">My Stories</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Writing Contests</a></li>
+                                </ul>
+                            </li>
+                            <a href="../premium page/premium.html">
+                                <button class="btn btn-outline-dark" id="premium">
+                                    Premium
+                                </button>
+                            </a>
+
+                            <li class="nav-item dropdown profile">
+                                <a class="nav-link active dropdown-toggle" href="#" id="navbarScrollingDropdown"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa-regular fa-user"></i>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                    <li><a class="dropdown-item" href="#">My Profile</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Language: English</a></li>
+                                    <li><a class="dropdown-item" href="#">Settings</a></li>
+                                    <li><a class="dropdown-item" href="#">Log Out</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-light" type="submit"><i class="bi bi-search"></i></button>
+                        </form>
+
+                    </div>
+                </div>
+            </nav>
+            <!-- <div>
             <img src="images/wattpad logo.png" alt="logo" id="brand" />
         </div>
         <div class="topnav">
            <button class="btn btn-light searchicon">
             <i class="fa-solid fa-magnifying-glass"></i>
             </button>
-
             <input type="text" placeholder="Search.." id="search">
+
             <a id="home" href="../Mainpage/mainpage.html">Home</a>
             <a href="../library/library.html" id="lib">Library</a>
        
@@ -54,13 +131,13 @@
                 <button class="btn btn-outline-dark" id="premium">
                  <i class="fa-solid fa-bolt symbol"></i>    Try Premium
                 </button>
-            </a>
+            </a> -->
 
             <!-- <button class="btn btn-light" id="pro">
                 <img src="images/no image profile.jpg" alt="profileImg" class="rounded" id="profile"/>
             </button>  -->
 
-            <div class="dropdown">
+            <!-- <div class="dropdown">
                 <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" id="pro">
                     <i class="fa-regular fa-user"></i>
                 </button>
@@ -71,142 +148,161 @@
                     <a class="dropdown-item" href="../Myprofile/myprofile.html">Setting</a>
                     <a class="dropdown-item" href="../Myprofile/myprofile.html">Log Out</a>
                 </div>
+            </div> -->
+
+        </header>
+
+    <div id="main">
+        <div id="section1">
+            <div class="greeting-text">Welcome To Wattpad!</div>
+            <div id="subtitle">Read and write anywhere, even offline.</div>
+            <hr />
+
+            <div>
+                <h3 id="heading">Top Picks For You</h3>
             </div>
 
-    </header>
-
-    <div id="section1">
-        <div class="greeting-text">Welcome To Wattpad!</div>
-        <div id="subtitle">Read and write anywhere, even offline.</div>
-        <hr />
-        <div>
-            <h3 id="heading">Top Picks For You</h3>
-        </div>
-
-        <div class="owl-carousel owl-theme">
-            <div class="item">
-                <a href="../Listingpage/Listing.html"><img src="images/kissing booth.jpg" alt="kising booth" /></a>
-                <span class="badge badge-light type">romance</span>
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <a href="../Listingpage/Listing.html"><img src="images/kissing booth.jpg" alt="kising booth" /></a>
+                    <span class="badge bg-light text-dark type">romance</span>
+                </div>
+                <div class="item">
+                    <a href="../Listingpage/Listing.html"><img src="images/blind mate.jpg" alt="blind mate" /></a>
+                    <span class="badge bg-light text-dark type">mature</span>
+                </div>
+                <div class="item">
+                    <a href="../Listingpage/Listing.html"><img src="images/ugly.jpg" alt="ugly" /></a>
+                    <span class="badge bg-light text-dark type">highschool</span>
+                </div>
+                <div class="item">
+                    <a href="../Listingpage/Listing.html"><img src="images/teen mom.jpg" alt="teen mom" /></a>
+                    <span class="badge bg-light text-dark type">teen</span>
+                </div>
+                <div class="item">
+                    <a href="../Listingpage/Listing.html"><img src="images/rangrez.jpg" alt="rangrez" /></a>
+                    <span class="badge bg-light text-dark type">complete</span>
+                </div>
+                <div class="item">
+                    <a href="../Listingpage/Listing.html"><img src="images/balcony.jpg" alt="balcony" /></a>
+                    <span class="badge bg-light text-dark type">love</span>
+                </div>
+                <div class="item">
+                    <a href="../Listingpage/Listing.html"><img src="images/weird dreams.jpg" alt="dreams" /></a>
+                    <span class="badge bg-light text-dark type">Ongoing</span>
+                </div>
             </div>
-            <div class="item">
-                <a href="../Listingpage/Listing.html"><img src="images/blind mate.jpg" alt="blind mate" /></a>
-                <span class="badge badge-light type">mature</span>
-            </div>
-            <div class="item">
-                <a href="../Listingpage/Listing.html"><img src="images/ugly.jpg" alt="ugly" /></a>
-                <span class="badge badge-light type">highschool</span>
-            </div>
-            <div class="item">
-                <a href="../Listingpage/Listing.html"><img src="images/teen mom.jpg" alt="teen mom" /></a>
-                <span class="badge badge-light type">teen</span>
-            </div>
-            <div class="item">
-                <a href="../Listingpage/Listing.html"><img src="images/rangrez.jpg" alt="rangrez" /></a>
-                <span class="badge badge-light type">complete</span>
-            </div>
-            <div class="item">
-                <a href="../Listingpage/Listing.html"><img src="images/balcony.jpg" alt="balcony" /></a>
-                <span class="badge badge-light type">love</span>
-            </div>
-            <div class="item">
-                <a href="../Listingpage/Listing.html"><img src="images/weird dreams.jpg" alt="dreams" /></a>
-                <span class="badge badge-light type">Ongoing</span>
-            </div>
-        </div>
-        <script>
-            $('.owl-carousel').owlCarousel({
-                loop: true,
-                margin: 10,
-                nav: true,
-                responsive: {
-                    0: {
-                        items: 1
-                    },
-                    600: {
-                        items: 3
-                    },
-                    1000: {
-                        items: 5
+            <script>
+                $('.owl-carousel').owlCarousel({
+                    loop: true,
+                    margin: 10,
+                    nav: true,
+                    responsive: {
+                        0: {
+                            items: 1
+                        },
+                        600: {
+                            items: 3
+                        },
+                        1000: {
+                            items: 5
+                        }
                     }
-                }
-            })
-        </script>
-    </div>
+                })
+            </script>
+        </div>
 
-    <div id="section2">
-        <div class="allcontent">
-            <div class="imgDiv">
-                <a href="../Listingpage/Listing.html"><img src="images/after.jpg" alt="after" class="img" /></a>
-            </div>
-            <div class="contentDiv">
+        <div id="section2">
+            <div class="allcontent">
                 <div>
-                    <h3 class="title">After</h3>
+                    <a href="../Listingpage/Listing.html"><img src="images/after.jpg" alt="after" class="img" /></a>
                 </div>
-                <span class="badge badge-dark complete">Complete</span>
-                <div class="read">
-                    <a href="../readingpage/reading.html">
-                        <button class="btn btn-outline-dark startReading">Start Reading</button>
-                    </a>
-                    <a href="../library/library.html">
-                    <button class="btn btn-outline-light">
-                        <i class="fa-solid fa-circle-plus add"></i>
-                    </button>
-                    </a>
-                      
+                <div class="contentDiv">
+                    <div>
+                        <h3 class="title">After</h3>
+                    </div>
+                    <span class="badge bg-success complete" style="border-radius:50px">Complete</span>
+                    <div class="read">
+                        <a href="../readingpage/reading.html">
+                            <button class="btn btn-outline-dark startReading" style="border-radius:50px">Start
+                                Reading</button>
+                        </a>
+                        <a href="../library/library.html">
+                            <button class=" btn btn-outline-light" style="border-radius:50px">
+                                <i class="bi bi-plus-circle-fill add"></i>
+                            </button>
+                        </a>
+                    </div>
+                    <div class="overview">
+                        <p>
+                            Tessa Young is a dedicated student, dutiful daughter and loyal girlfriend to her high school
+                            sweetheart. Entering her first semester of college, Tessa's guarded world opens up when she
+                            meets Hardin Scott, a mysterious and brooding rebel who makes her question all she thought
+                            she knew about herself -- and what she wants out of life.
+                        </p>
+                    </div>
                 </div>
-                <div class="overview">
-                    <p>
-                        Tessa Young is an 18 year old college student with a simple life, excellent grades, and a sweet
-                        boyfriend. She always has things planned out ahead of time, until she meets a rude boy named
-                        Hardin, with too many tattoos and piercings who shatters her plans.
-                    </p>
+            </div>
+
+        </div>
+
+
+        <div id="section3">
+            <div class="allcontent">
+                <div class="imgDiv">
+                    <a href="../Listingpage/Listing.html"><img src="images/half a moonstone.jpg" alt="half a moonstone"
+                            class="img" /></a>
+                </div>
+                <div class="contentDiv">
+                    <div>
+                        <h3 class="title">Half a Moonstone</h3>
+                    </div>
+                    <span class="badge bg-success complete" style="border-radius:50px">Complete</span>
+                    <div class="read">
+                        <a href="../readingpage/reading.html">
+                            <button class="btn btn-outline-dark startReading" style="border-radius:50px">Start
+                                Reading</button>
+                        </a>
+                        <a href="../library/library.html">
+                            <button class=" btn btn-outline-light" style="border-radius:50px">
+                                <i class="bi bi-plus-circle-fill add"></i>
+                            </button>
+                        </a>
+
+                    </div>
+                    <div class="overview">
+                        <p>
+                            An aura of power wrapped around the pair as their eyes met. Damayanthi Pratap Rathore, the
+                            only
+                            heir to the throne smiled as she greeted Rajveer Vikram Rana, the best swordsman of
+                            Mahendragiri
+                            and the Chief of Security.
+                            Both saw it at the exact same time. Half a moonstone, embedded on the hilt of each other's
+                            swords. Both The Princess and the Warrior inwardly gasped. The gems looked so identical, as
+                            if
+                            they were two halves of the same moonstone....
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
+
+        <footer>
+            <div>
+                <h3 id="footDiv">Wattpad Where Stories Live....</h3>
+            </div>
+        </footer>
 
     </div>
-
-
-    <div id="section3">
-        <div class="allcontent">
-            <div class="imgDiv">
-                <a href="../Listingpage/Listing.html"><img src="images/half a moonstone.jpg" alt="half a moonstone" class="img" /></a>
-            </div>
-            <div class="contentDiv">
-                <div>
-                    <h3 class="title">Half a Moonstone</h3>
-                </div>
-                <span class="badge badge-dark complete">Complete</span>
-                <div class="read">
-                    <a href="../readingpage/reading.html">
-                        <button class="btn btn-outline-dark startReading">Start Reading</button>
-                    </a>
-                    <a href="../library/library.html">
-                    <button class="btn btn-outline-light">
-                        <i class="fa-solid fa-circle-plus add"></i>
-                    </button>
-                    </a>
-                    
-                </div>
-                <div class="overview">
-                    <p>
-                        An aura of power wrapped around the pair as their eyes met. Damayanthi Pratap Rathore, the only
-                        heir to the throne smiled as she greeted Rajveer Vikram Rana, the best swordsman of Mahendragiri
-                        and the Chief of Security.
-                        Both saw it at the exact same time. Half a moonstone, embedded on the hilt of each other's
-                        swords. Both The Princess and the Warrior inwardly gasped. The gems looked so identical, as if
-                        they were two halves of the same moonstone....
-                    </p>
-                </div>
-            </div>
-        </div>
+    <div id="coupon">
+        <div><button onClick="closeCoupon()" id="close">
+            <i class="bi bi-x"></i>
+        </button></div>
+        <img src="images/The life of a college student.jpg" alt="scars of alera" id="popupimg">
     </div>
-
-    <footer>
-        <div>
-            <h3 id="footDiv">Wattpad Where Stories Live....</h3>
-        </div>
-    </footer>
+    <script>
+        window.onload = loadCoupon()
+    </script>
 </body>
 
 </html>
