@@ -34,7 +34,7 @@
 
 <script src="https://kit.fontawesome.com/c4338603d0.js" crossorigin="anonymous"></script>
 
-<body>
+<body >
         <header>
 
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -152,10 +152,18 @@
 
         </header>
 
+
     <div id="main">
+
+        <div id="modeGeo">
+            <button onclick="changeMode()" class="btn btn-outline-dark" id="light">
+                <img src="images/lightdark.png" alt="lightdarkmode" />
+            </button>
+        </div>
+        
         <div id="section1">
-            <div class="greeting-text">Welcome To Wattpad!</div>
-            <div id="subtitle">Read and write anywhere, even offline.</div>
+            <div id="greeting-text">Welcome To Wattpad!</div>
+           <div id="subtitle">Read and write anywhere, even offline.</div>
             <hr />
 
             <div>
@@ -228,7 +236,7 @@
                                 Reading</button>
                         </a>
                         <a href="../library/library.html">
-                            <button class=" btn btn-outline-light" style="border-radius:50px">
+                            <button class=" btn btn-outline-light"  style="border-radius:50px">
                                 <i class="bi bi-plus-circle-fill add"></i>
                             </button>
                         </a>
@@ -295,9 +303,11 @@
 
     </div>
     <div id="coupon">
-        <div><button onClick="closeCoupon()" id="close">
-            <i class="bi bi-x"></i>
-        </button></div>
+        <div>
+            <button onClick="closeCoupon()" id="close">
+               <i class="bi bi-x"></i>
+            </button>
+       </div>
         <img src="images/The life of a college student.jpg" alt="scars of alera" id="popupimg">
     </div>
     <script>
