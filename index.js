@@ -45,7 +45,7 @@ let y = document.getElementById('weatherOut');
                     let temp = data.list[0].temp.day;
 
                     y.innerText = ` ${cityName}
-                    Day temp: ${temp} °C `
+                    Day temp: ${temp} \u00B0C `
                     x.innerText = `Latitude: ${lat}  Longitude: ${long}`
                 })
             }
