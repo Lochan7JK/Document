@@ -113,7 +113,7 @@ header{
 }
 #geolocation{
     /* border:2px solid olive; */
-    height:100px;
+    height:90px;
     width:15%;
     margin-top: 0%;
     margin-left: 85%;
@@ -132,6 +132,16 @@ header{
     height:50px;
     width:50px;
 }
+#buttonimg{
+    margin-left: -11%;
+    margin-top: 3%;
+    height:35px;
+    width:35px;
+}
+#backimage{
+    margin-left: 47%;
+    margin-top: -20%;
+}
 .cloud{
     font-size: 25px;
     /* color: #128ce5; */
@@ -139,21 +149,23 @@ header{
     /* color: #01b3a5; */
 }
 #out{
-    /* font-family: cursive; */
-    font-size: 14px;
+    font-size: 13px;
     color: inherit;
-    margin-left: 30%;
+    margin-left: 32%;
+    margin-top: -100%;
+    /* z-index: 100;
+    position: fixed; */
 }
 #weatherOut{
-    font-size: 14px;
-    /* font-family: cursive; */
+    font-size: 13px;
     color: inherit;
-    margin-left: 30%;
+    margin-left: 32%;
+    margin-top: -55%;
 }
 #light{
     border: none;
     margin-left: 1%;
-    margin-top: -7%;
+    margin-top: -6.5%;
     cursor: pointer;
     height:50px;
     /* background-color: black;
