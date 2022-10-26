@@ -107,15 +107,55 @@ header{
 #modeGeo{
     /* display: inline-block; */
     /* border:2px solid violet; */
-    height:49px;
+    height:60px;
     margin-top: -0.5%;
     /* margin-left: 10%; */
 }
-
+#geolocation{
+    /* border:2px solid olive; */
+    height:100px;
+    width:15%;
+    margin-top: 0%;
+    margin-left: 85%;
+}
+#weather{
+    font-size:17px;
+    font-size: bold;
+    margin-left: 47%;
+    /* font-family: cursive; */
+}
+#button{
+    margin-left: 50%;
+    margin-top: 3%;
+    border: none;
+    cursor: pointer;
+    height:50px;
+    width:50px;
+}
+.cloud{
+    font-size: 25px;
+    /* color: #128ce5; */
+    color: #e2e2e2;
+    /* color: #01b3a5; */
+}
+#out{
+    /* font-family: cursive; */
+    font-size: 14px;
+    color: inherit;
+    margin-left: 30%;
+}
+#weatherOut{
+    font-size: 14px;
+    /* font-family: cursive; */
+    color: inherit;
+    margin-left: 30%;
+}
 #light{
     border: none;
-    margin-left: 95%;
-    margin-top: 0.5%;
+    margin-left: 1%;
+    margin-top: -7%;
+    cursor: pointer;
+    height:50px;
     /* background-color: black;
     color:white; */
 }
@@ -131,7 +171,7 @@ header{
     /* height:400px; */
     /* background-color: #e9e9e9; */
     width: 80%;
-    margin-left: 10%;
+    margin-left: 9%;
     display: inline-block;
 }
 #greeting-text{

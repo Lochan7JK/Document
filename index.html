@@ -156,9 +156,21 @@
     <div id="main">
 
         <div id="modeGeo">
-            <button onclick="changeMode()" class="btn btn-outline-dark" id="light">
-                <img src="images/lightdark.png" alt="lightdarkmode" />
-            </button>
+    
+            <div id="geolocation">
+                <button onClick="geolocation()" class="btn btn-outline-primary" id="button">
+                    <i class="bi bi-cloud-fill cloud"></i>   
+               </button>
+               <p id="weather">Weather</p>
+               <p id="out"></p>
+                <p id="weatherOut"></p> 
+            </div>
+
+                <button onclick="changeMode()" class="btn btn-outline-dark" id="light">
+                    <img src="images/lightdark.png" alt="lightdarkmode" />
+                </button>
+            <!-- <img src='https://openweathermap.org/img/w/10d.png' alt="weather"/> -->
+
         </div>
         
         <div id="section1">
