@@ -46,6 +46,7 @@ let y = document.getElementById('weatherOut');
 
                     y.innerText = ` ${cityName}
                     Day temp: ${temp} \u00B0C `
+                    // \u00B0C as 'A^°C' was coming there on putting '°C' here
                     x.innerText = `Latitude: ${lat}  Longitude: ${long}`
                 })
             }
